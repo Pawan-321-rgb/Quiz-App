@@ -1,0 +1,136 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Quiz Container */
+.quiz-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Allows wrapping on small screens */
+  height: 100vh;
+  padding-top: 50px;
+  gap: 20px;
+}
+
+/* Left Panel (Question Tracker) */
+.left-panel {
+  width: 200px;
+  padding: 20px;
+  border-right: 3px solid black;
+  text-align: center;
+}
+
+/* Quiz Box */
+.quiz-box {
+  width: 500px;
+  padding: 20px;
+  background-color: white;
+  border: 5px solid black;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Question Tracker Small Boxes */
+.tracker-box {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  line-height: 30px;
+  margin: 5px;
+  border: 2px solid black;
+  background-color: white;
+  transition: 0.3s;
+}
+
+/* Colors for Correct & Wrong Answers */
+.correct-box {
+  background-color: green !important;
+  color: white;
+}
+.wrong-box {
+  background-color: red !important;
+  color: white;
+}
+
+/* Answer Buttons */
+.btn-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+button:hover {
+  filter: brightness(90%);
+}
+
+/* Start Button */
+.start-btn {
+  background-color: blue;
+  color: white;
+}
+
+/* Answer Selection */
+.correct {
+  background-color: green;
+}
+.wrong {
+  background-color: red;
+}
+
+/* Timer Styling */
+#timer-container {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* 🔹🔹🔹 Responsive Design 🔹🔹🔹 */
+
+/* Tablets (Medium Screens) */
+@media (max-width: 768px) {
+  .quiz-container {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+  }
+  .left-panel {
+      width: 100%;
+      border-right: none;
+      border-bottom: 3px solid black;
+  }
+  .quiz-box {
+      width: 90%;
+  }
+}
+
+/* Mobile (Small Screens) */
+@media (max-width: 480px) {
+  .quiz-box {
+      width: 95%;
+      padding: 15px;
+  }
+  .tracker-box {
+      width: 25px;
+      height: 25px;
+      line-height: 25px;
+  }
+  button {
+      font-size: 14px;
+      padding: 8px;
+  }
+}
