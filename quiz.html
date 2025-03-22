@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <!-- Left Panel for Question Tracker -->
+        <div class="left-panel">
+            <h3>Question Tracker</h3>
+            <div id="tracker-grid"></div>
+        </div>
+
+        <!-- Quiz Box -->
+        <div class="quiz-box">
+            <h1>Machine Learning Quiz</h1>
+            <div id="timer-container">⏳ Time Left: <span id="time">300</span> sec</div>
+            <div id="question-container" class="hide">
+                <p id="question"></p>
+                <div id="answer-buttons" class="btn-grid"></div>
+            </div>
+            <button id="start-btn" class="start-btn">Start Quiz</button>
+            <button id="next-btn" class="hide">Next</button>
+            <button id="submit-btn" class="hide">Submit</button>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
