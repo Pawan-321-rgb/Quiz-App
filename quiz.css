@@ -1,4 +1,3 @@
-/* General Styling */
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -7,7 +6,6 @@ body {
   padding: 0;
 }
 
-/* Main Quiz Container */
 .quiz-container {
   display: flex;
   justify-content: center;
@@ -18,7 +16,6 @@ body {
   gap: 20px;
 }
 
-/* Left Panel (Question Tracker) */
 .left-panel {
   width: 200px;
   padding: 20px;
@@ -26,7 +23,6 @@ body {
   text-align: center;
 }
 
-/* Quiz Box */
 .quiz-box {
   width: 500px;
   padding: 20px;
@@ -36,7 +32,6 @@ body {
   text-align: center;
 }
 
-/* Question Tracker Small Boxes */
 .tracker-box {
   width: 30px;
   height: 30px;
@@ -49,7 +44,6 @@ body {
   transition: 0.3s;
 }
 
-/* Colors for Correct & Wrong Answers */
 .correct-box {
   background-color: green !important;
   color: white;
@@ -59,7 +53,6 @@ body {
   color: white;
 }
 
-/* Answer Buttons */
 .btn-grid {
   display: flex;
   flex-direction: column;
@@ -99,9 +92,6 @@ button:hover {
   margin: 10px 0;
 }
 
-/* 🔹🔹🔹 Responsive Design 🔹🔹🔹 */
-
-/* Tablets (Medium Screens) */
 @media (max-width: 768px) {
   .quiz-container {
       flex-direction: column;
